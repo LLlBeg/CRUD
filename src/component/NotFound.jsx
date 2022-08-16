@@ -1,4 +1,4 @@
-import notfound from "../Assets/Images/NotFound.jpg";
+import notfound from "../assets/images/NotFound.jpg";
 
 const NotFound = () => {
   return (

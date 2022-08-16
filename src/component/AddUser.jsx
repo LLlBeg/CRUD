@@ -8,7 +8,7 @@ import {
   styled,
   Typography,
 } from "@mui/material";
-import { addUser } from "../Service/api";
+import { addUser } from "../service/api";
 import { useNavigate } from "react-router-dom";
 
 const initialValue = {
@@ -42,27 +42,27 @@ const AddUser = () => {
     <Container>
       <Typography variant="h4">Add User</Typography>
       <FormControl>
-        <InputLabel htmlFor="my-input">Name</InputLabel>
+        <InputLabel htmlFor="my-input-name">Name</InputLabel>
         <Input
-          onChange={(e) => onValueChange(e)}
+          onChange={onValueChange}
           name="name"
           value={name}
           id="my-input"
         />
       </FormControl>
       <FormControl>
-        <InputLabel htmlFor="my-input">Username</InputLabel>
+        <InputLabel htmlFor="my-input-username">Username</InputLabel>
         <Input
-          onChange={(e) => onValueChange(e)}
+          onChange={onValueChange}
           name="surname"
           value={surname}
           id="my-input"
         />
       </FormControl>
       <FormControl>
-        <InputLabel htmlFor="my-input">Phone</InputLabel>
+        <InputLabel htmlFor="my-input-phone">Phone</InputLabel>
         <Input
-          onChange={(e) => onValueChange(e)}
+          onChange={onValueChange}
           name="phone"
           value={phone}
           id="my-input"

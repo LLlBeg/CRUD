@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import AllUsers from "./Component/AllUsers";
-import AddUser from "./Component/AddUser";
-import EditUser from "./Component/EditUser";
-import NavBar from "./Component/NavBar";
-import NotFound from "./Component/NotFound";
+import AllUsers from "./component/AllUsers";
+import AddUser from "./component/AddUser";
+import EditUser from "./component/EditUser";
+import NavBar from "./component/NavBar";
+import NotFound from "./component/NotFound";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

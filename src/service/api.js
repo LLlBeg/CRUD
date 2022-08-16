@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const usersUrl = "https://612687da3ab4100017a68fd8.mockapi.io/users";
+const usersUrl = "https://62fbb65ee4bcaf53518b8e26.mockapi.io/users";
 
 export const getUsers = async (id) => {
   id = id || "";

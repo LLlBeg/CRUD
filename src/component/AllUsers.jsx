@@ -9,7 +9,7 @@ import {
   Button,
   styled,
 } from "@mui/material";
-import { getUsers, deleteUser } from "../Service/api";
+import { getUsers, deleteUser } from "../service/api";
 import { Link } from "react-router-dom";
 
 const StyledTable = styled(Table)`

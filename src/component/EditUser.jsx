@@ -10,7 +10,7 @@ import {
   Typography,
 } from "@mui/material";
 import { useNavigate, useParams } from "react-router-dom";
-import { getUsers, editUser } from "../Service/api";
+import { getUsers, editUser } from "../service/api";
 
 const initialValue = {
   name: "",
@@ -55,9 +55,9 @@ const EditUser = () => {
     <Container>
       <Typography variant="h4">Edit Information</Typography>
       <FormControl>
-        <InputLabel htmlFor="my-input">Name</InputLabel>
+        <InputLabel htmlFor="my-input-name">Name</InputLabel>
         <Input
-          onChange={(e) => onValueChange(e)}
+          onChange={onValueChange}
           name="name"
           value={name}
           id="my-input"
@@ -65,9 +65,9 @@ const EditUser = () => {
         />
       </FormControl>
       <FormControl>
-        <InputLabel htmlFor="my-input">Surname</InputLabel>
+        <InputLabel htmlFor="my-input-surname">Surname</InputLabel>
         <Input
-          onChange={(e) => onValueChange(e)}
+          onChange={onValueChange}
           name="surname"
           value={surname}
           id="my-input"
@@ -75,9 +75,9 @@ const EditUser = () => {
         />
       </FormControl>
       <FormControl>
-        <InputLabel htmlFor="my-input">Phone</InputLabel>
+        <InputLabel htmlFor="my-input-phone">Phone</InputLabel>
         <Input
-          onChange={(e) => onValueChange(e)}
+          onChange={onValueChange}
           name="phone"
           value={phone}
           id="my-input"
